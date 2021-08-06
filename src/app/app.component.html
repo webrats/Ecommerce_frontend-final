@@ -1,0 +1,23 @@
+<app-header></app-header>
+
+<div *ngIf="loaderStatus | async">
+  <app-loading-spinner></app-loading-spinner>
+</div>
+
+<div>
+  <div class="row">
+    <div *ngIf="errorMessage | async as error" class="alert alert-danger">
+      Error occurred : {{ error }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+      <div class="sticky-cart">
+        <app-cart></app-cart>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,297 @@
+<div class="row my-5">
+  <!-- display Category -->
+  <div class="col-md-3 category m-2">
+    <div class="category-title text-center" data-aos="fade-up-right">
+      <h3>Category</h3>
+    </div>
+    <hr />
+
+    <div class="category-items"></div>
+    <!-- Category Start  -->
+    <div class="panel-body panel_text" style="font-size: 15px">
+      <ul class="list-group">
+        <li class="list-group-item" data-aos="fade-up-right">
+          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          <a
+            [routerLink]="['/products']"
+            (click)="filerByCategory(0)"
+            class="nav-link"
+            [ngClass]="activeItemId == 0 ? 'active' : 'none'"
+            >All Products</a
+          >
+        </li>
+        <li class="list-group-item" data-aos="fade-up-right">
+          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          <a
+            [routerLink]="['/products']"
+            (click)="filerByCategory(1)"
+            class="nav-link"
+            [ngClass]="activeItemId == 1 ? 'active' : 'none'"
+            >Mobiles</a
+          >
+        </li>
+        <li class="list-group-item" data-aos="fade-up-right">
+          <a
+            [routerLink]="['/products']"
+            (click)="filerByCategory(2)"
+            class="nav-link"
+            [ngClass]="activeItemId == 2 ? 'active' : 'none'"
+            >Laptop</a
+          >
+        </li>
+        <li class="list-group-item" data-aos="fade-up-right">
+          <a
+            [routerLink]="['/products']"
+            (click)="filerByCategory(3)"
+            class="nav-link"
+            [ngClass]="activeItemId == 3 ? 'active' : 'none'"
+            >Tv</a
+          >
+        </li>
+        <li class="list-group-item" data-aos="fade-up-right">
+          <a
+            [routerLink]="['/products']"
+            (click)="filerByCategory(5)"
+            class="nav-link"
+            [ngClass]="activeItemId == 5 ? 'active' : 'none'"
+            >Wearables</a
+          >
+        </li>
+        <li class="list-group-item" data-aos="fade-up-right">
+          <a
+            [routerLink]="['/products']"
+            (click)="filerByCategory(4)"
+            class="nav-link"
+            [ngClass]="activeItemId == 4 ? 'active' : 'none'"
+            >Refrigerator</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- Category end  -->
+    <!-- Rating heading -->
+
+    <div class="category-title text-center my-3" data-aos="fade-up-right">
+      <h3>Rating</h3>
+    </div>
+    <hr />
+    <!-- Rating  -->
+
+    <div>
+      <div
+        class="form-inline d-flex align-items-center py-2"
+        data-aos="fade-up-right"
+      >
+        <label class="tick"
+          ><span class="fa fa-star"></span> <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span> <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <input type="checkbox" class="form-check-input" />
+          <span class="check"></span>
+        </label>
+      </div>
+      <div
+        class="form-inline d-flex align-items-center py-2"
+        data-aos="fade-up-right"
+      >
+        <label class="tick">
+          <span class="fa fa-star"></span> <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span> <span class="fa fa-star"></span>
+          <span class="fa fa-star-o"></span>
+          <input type="checkbox" class="form-check-input" />
+          <span class="check"></span>
+        </label>
+      </div>
+      <div
+        class="form-inline d-flex align-items-center py-2"
+        data-aos="fade-up-right"
+      >
+        <label class="tick"
+          ><span class="fa fa-star"></span> <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star-o"></span>
+          <span class="fa fa-star-o"></span>
+          <input type="checkbox" class="form-check-input" />
+          <span class="check"></span>
+        </label>
+      </div>
+      <div
+        class="form-inline d-flex align-items-center py-2"
+        data-aos="fade-up-right"
+      >
+        <label class="tick"
+          ><span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star-o"></span>
+          <span class="fa fa-star-o"></span>
+          <span class="fa fa-star-o"></span>
+          <input type="checkbox" class="form-check-input" />
+          <span class="check"></span>
+        </label>
+      </div>
+      <div
+        class="form-inline d-flex align-items-center py-2"
+        data-aos="fade-up-right"
+      >
+        <label class="tick">
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star-o"></span>
+          <span class="fa fa-star-o"></span>
+          <span class="fa fa-star-o"></span>
+          <span class="fa fa-star-o"></span>
+          <input type="checkbox" class="form-check-input" />
+          <span class="check"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Ratting end  -->
+  </div>
+
+  <!-- Display products here  -->
+  <div class="col-md-8 m-2">
+    <!-- dispaly small banar of discount -->
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="row">
+          <img
+            src="assets/images/46.jpg"
+            class="rounded img-fluid"
+            alt="discount Banar 1"
+          />
+          <div class="centerd">
+            <div class="row">
+              <h3>Smart Phones</h3>
+            </div>
+            <div class="row">
+              <h3><span style="color: red">Up To</span></h3>
+            </div>
+
+            <div class="row">
+              <h3>15% Discount</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="row">
+          <img
+            src="assets/images/47.jpg"
+            class="rounded img-fluid"
+            alt="discount Banar 2"
+          />
+          <div class="centerd">
+            <div class="row">
+              <h3>Top 10 Latest</h3>
+            </div>
+            <div class="row">
+              <h3>Mobile & Accessories</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Display products -->
+
+    <div class="row my-3">
+      <div class="col d-flex inline my-2">
+        <!-- Total products count -->
+        <div class="product-filter" data-aos="fade-up-right">
+          <span class="text-muted">Total -</span
+          ><span class="green-label px-md-2 px-1">{{ productsSize }}</span
+          ><span class="text-muted">Products</span>
+        </div>
+        <!-- Filter by chipest and highest price-->
+        <div class="product-filter" data-aos="fade-up-right">
+          <label class="options"
+            >Most Popular
+            <input type="radio" name="radio" (click)="sortByPriceHighToLow()" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="options"
+            >Cheapest
+            <input type="radio" name="radio" (click)="sortByPriceLowToHigh()" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+
+      <ul class="list-group" *ngFor="let product of products">
+        <li class="list-group-item" data-aos="fade-left">
+          <!-- Product  start -->
+          <div class="container">
+            <div class="d-flex justify-content-center row">
+              <div class="col-md-12">
+                <div class="row p-2 bg-white border rounded mt-2">
+                  <div class="col-md-3 mt-1">
+                    <img
+                      class="img-fluid img-responsive rounded product-image"
+                      src="assets/images/{{ product.image }}"
+                    />
+                  </div>
+                  <div class="col-md-6 mt-1">
+                    <h5>{{ product.name }}</h5>
+                    <div class="d-flex flex-row">
+                      <div class="ratings mr-2">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i
+                        ><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                      </div>
+                      <span>110</span>
+                    </div>
+                    <div class="mt-1 mb-1 spec-1">
+                      <span>100% Original</span><span class="dot"></span
+                      ><span>Light weight</span><span class="dot"></span
+                      ><span>Best Saler<br /></span>
+                    </div>
+                    <div class="mt-1 mb-1 spec-1">
+                      <span>Unique design</span><span class="dot"></span
+                      ><span>For men</span><span class="dot"></span
+                      ><span>Water Protection<br /></span>
+                    </div>
+                    <p class="text-justify text-truncate para mb-0">
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      don't look even slightly believable.<br /><br />
+                    </p>
+                  </div>
+                  <div
+                    class="
+                      align-items-center align-content-center
+                      col-md-3
+                      border-left
+                      mt-1
+                    "
+                  >
+                    <div class="d-flex flex-row align-items-center">
+                      <p class="mr-1">Rs.{{ product.price }}</p>
+                      <span class="strike-text">{{ product.price + 156 }}</span>
+                    </div>
+                    <h6 class="text-success">Free shipping</h6>
+                    <div class="d-flex flex-column mt-4">
+                      <a
+                        [routerLink]="['view']"
+                        class="btn btn-primary btn-sm"
+                        type="button"
+                      >
+                        Details</a
+                      ><button
+                        class="btn btn-outline-primary btn-sm mt-2"
+                        type="button"
+                        (click)="addToCart(product.id, product.price)"
+                      >
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- product end -->
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

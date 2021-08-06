@@ -1,0 +1,154 @@
+body {
+  background: #eee;
+}
+
+.ratings i {
+  font-size: 16px;
+  color: red;
+}
+
+.strike-text {
+  color: red;
+  text-decoration: line-through;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 3px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.spec-1 {
+  color: #938787;
+  font-size: 15px;
+}
+
+h5 {
+  font-weight: 400;
+}
+
+.para {
+  font-size: 16px;
+}
+
+.category {
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fdfafa;
+}
+
+.category-title {
+  border-radius: 25px;
+  border: 2px solid #ccc;
+  padding: 20px;
+}
+
+.fa.fa-star,
+.fa.fa-star-o {
+  color: rgb(255, 187, 0);
+  font-size: 20px;
+  margin-right: 6px;
+}
+
+.green-label {
+  background-color: #defadb;
+  color: #48b83e;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  margin: 0 3px;
+}
+
+.text-muted {
+  margin-right: 5px;
+}
+
+.radio,
+.checkbox {
+  padding: 6px 10px;
+}
+
+.border {
+  border-radius: 12px;
+}
+
+.options {
+  position: relative;
+  padding-left: 25px;
+}
+
+.radio label,
+.checkbox label {
+  display: block;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.options input {
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+
+.options .checkmark:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  display: block;
+  background: white;
+  position: absolute;
+  top: 52%;
+  left: 51%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 300ms ease-in-out 0s;
+}
+
+.options input[type="radio"]:checked ~ .checkmark {
+  background: #61b15a;
+  transition: 300ms ease-in-out 0s;
+}
+
+.options input[type="radio"]:checked ~ .checkmark:after {
+  transform: translate(-50%, -50%) scale(1);
+}
+.product-filter {
+  border-radius: 50px;
+  padding: 6px;
+  border: 1px solid green;
+}
+
+.centerd {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+}
+.centerd h3 {
+  color: white;
+}
+
+.active {
+  border-radius: 25px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+}
